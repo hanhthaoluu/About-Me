@@ -21,7 +21,7 @@ console.log('a 9 months old son. Besides spending time learning to code and');
 console.log('having fun with two kids, Thao has other hobbies.');
 var hobbyQuestion = prompt('Is gardening Thao\'s favorite hobby?').toUpperCase();
 if (hobbyQuestion === 'Yes'){
-  console('Correct! You\'re good at this game!');
+  console.log('Correct! You\'re good at this game!');
 } else {
   prompt('Incorrect! Try again! Guess it right next time!');
 }
@@ -32,11 +32,22 @@ var hobbyQuestion2 = prompt('Has Thao been to the Zion National Park?').toUpperC
 if (hobbyQuestion2 === 'Yes'){
   console.log('You are a genius! Let\'s move forward!');
 } else {
-  console.log('Incorrect! But don\'t give up. You will get it right next time!');
+  alert('Incorrect! But don\'t give up. You will get it right next time!');
+  console.log('The user answered incorrectly, but it\'s ok.');
 }
-var hobbyQuestion3 = prompt('Is Thao a vegetarian?').toLowerCase();
+console.log('Thao loves to take roadtrips. One time, Thao drove her family');
+console.log('back to Seattle from California nonstop.');
+var hobbyQuestion3 = prompt('Do you think Thao got a speeding ticket on her way back from California?').toLowerCase();
 if (hobbyQuestion3 === 'yes'){
   console.log('Awesome! You got it right!');
 } else {
   console.log('Incorrect!');
+}
+var lifeValueQuestion= prompt('Is Thao a vegetarian?').toLowerCase();
+if (lifeValueQuestion === 'yes'){
+  alert('Fanstastic! You got it right! Thao loves plants but she eats mainly plants. This is a conflict of interest that Thao cannot resolve.');
+  console.log(user + ' got the question right.');
+} else {
+  alert('Sorry, you got it wrong!');
+  console.log(user + ' got the question wrong.');
 }
