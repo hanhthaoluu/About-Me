@@ -14,3 +14,12 @@ if (userAnswer === 'yes'.toLowerCase()){
 } else {
   console.log('Incorrect! Guess again!');
 }
+console.log('Thao has two beautiful kids, a five years old daughter and');
+console.log('a 9 months old son. Besides spending time learning to code and');
+console.log('having fun with two kids, Thao has other hobbies.');
+var hobbyQuestion = prompt('Is gardening Thao\'s favorite hobby?');
+if (hobbyQuestion === 'Yes'.toUpperCase()){
+  console.log('Correct! You\'re good at this game!');
+} else {
+  prompt('Incorrect! Try again! Guess it right next time!');
+}
