@@ -14,7 +14,7 @@ if (familyQuestion === 'yes' || familyQuestion === 'y'){
   alert('Excellent! You are right!');
   console.log(user + ' got the familyQuestion question right.');
 } else if (familyQuestion === 'no' || familyQuestion === 'n'){
-  alert('Incorrect!');
+  alert('Incorrect! Don\'t worry. You will get it right next time.');
   console.log(user + ' got the familyQuestion question wrong.');
 } else {
   alert('Invalid response.');
@@ -27,8 +27,8 @@ if(hobbyQuestion === 'YES' || hobbyQuestion === 'Y'){
   alert('Superstar! You\'re good at this game!');
   console.log(user + ' is a great player!');
 } else if (hobbyQuestion === 'NO' || hobbyQuestion === 'N'){
-  alert('Incorrect! Sorry!');
-  console.log(user + 'got the hobbyQuestion question wrong.')
+  alert('Incorrect! Keep going! You will get it right next time.');
+  console.log(user + 'got the hobbyQuestion question wrong.');
 } else {
   alert('Invalid response.');
 }
@@ -50,9 +50,9 @@ console.log('back to Seattle from California nonstop.');
 var hobbyQuestion3 = prompt('Do you think Thao got a speeding ticket on her way back from California?').toLowerCase();
 if (hobbyQuestion3 === 'yes' || hobbyQuestion3 === 'y'){
   alert('Awesome! You got it right!');
-  console.log(user + ' got the hobbyQuestion3 question correct!')
+  console.log(user + ' got the hobbyQuestion3 question correct!');
 } else if (hobbyQuestion3 === 'no' || hobbyQuestion3 === 'n'){
-  alert('Incorrect! Next question...');
+  alert('Incorrect! Keep going and you will get the next question right.');
   console.log(user + ' got the hobbyQuestion3 question wrong.');
 } else {
   alert('Invalid response.');
@@ -67,4 +67,4 @@ if(lifeValueQuestion === 'yes' || lifeValueQuestion === 'y'){
 } else {
   alert('Invalid response.');
 }
-alert('This is the end of the guessing game. Hope you enjoyed playing the game. Thank you for playing!')
+alert('This is the end of the guessing game. Hope you enjoyed playing the game. Thank you for playing!');
