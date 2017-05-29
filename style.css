@@ -1,9 +1,26 @@
 body {
-background-image: url("images/IMG_1117.JPG");
+/*I don't like this image after all as a background-image.
+background-image: url("images/IMG_1117.JPG");*/
+background: #DCDCDC;
+background-image: url("http://www.worldfolksong.com/songbook/hawaii/img/pearl01.jpg");
+background-repeat: no-repeat;
+background-size: 100% 120%;
+
+padding: 0;
+margin: 0;
 }
 
 h1 {
-  background-color: blue;
+  background-color: LightSeaGreen;
   color: brown;
   font-family: helvetica;
+  font-size: 40px;
+}
+#personality {
+  font-family: "Calisto MT", serif;
+  font-size: 20px;
+}
+p {
+  font-size: 22px;
+  font-style: normal;
 }
