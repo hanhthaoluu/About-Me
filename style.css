@@ -1,13 +1,12 @@
 body {
 /*I don't like this image after all as a background-image.
 background-image: url("images/IMG_1117.JPG");*/
-background: #DCDCDC;
+background: rgba(0,0,0,.8);
 background-image: url("http://www.worldfolksong.com/songbook/hawaii/img/pearl01.jpg");
 background-repeat: no-repeat;
-background-size: 100% 120%;
+background-size: 100% 130%;
 
-padding: 0;
-margin: 0;
+
 }
 
 h1 {
@@ -18,9 +17,10 @@ h1 {
 }
 #personality {
   font-family: "Calisto MT", serif;
-  font-size: 20px;
+
 }
 p {
   font-size: 22px;
   font-style: normal;
+  font-weight: bolder;
 }
