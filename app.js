@@ -1,8 +1,6 @@
 'use strict';
-alert('Hello! Welcome to Thao\'s Page!');
-
+alert('Hello there! Welcome to Thao\'s Page!');
 var user = prompt('What is your name?');
-
 alert('Welcome ' + user + '!');
 
 var confirmed = confirm(user + ', are you ready to play a guessing game?');
@@ -26,9 +24,7 @@ if (familyQuestion === 'yes' || familyQuestion === 'y'){
   alert('Invalid response.');
 }
 
-console.log('Thao has two beautiful kids, a five years old daughter and');
-console.log('a 9 months old son. Besides spending time learning to code and');
-console.log('having fun with two kids, Thao has other hobbies.');
+alert('Thao has two beautiful kids, a five years old daughter and a 9 months old son. Besides spending time learning to code and having fun with two kids, Thao has other hobbies.');
 
 var hobbyQuestion = prompt('Is gardening Thao\'s favorite hobby?').toUpperCase();
 
@@ -42,11 +38,9 @@ if(hobbyQuestion === 'YES' || hobbyQuestion === 'Y'){
   alert('Invalid response.');
 }
 
-console.log('Summer is almost here. Are you excited?! During the warm months,');
-console.log('Thao likes to do something else also besides spending time');
-console.log('in the garden.');
+alert('Summer is almost here. Are you excited?! During the warm months, Thao likes to do something else also besides spending time in the garden.');
 
-var hobbyQuestion2 = prompt('Has Thao been to the Zion National Park?').toUpperCase();
+var hobbyQuestion2 = prompt('Has Thao been to the Zion National Park and Bryce Kenyon National Park?').toUpperCase();
 
 if(hobbyQuestion2 === 'YES' || hobbyQuestion2 === 'Y'){
   alert('You are a genius! Let\'s move forward!');
@@ -58,10 +52,7 @@ if(hobbyQuestion2 === 'YES' || hobbyQuestion2 === 'Y'){
   alert('Invalid response.');
 }
 
-console.log('Thao loves to take roadtrips. One time, Thao drove her family');
-console.log('back to Seattle from California nonstop.');
-
-var hobbyQuestion3 = prompt('Do you think Thao got a speeding ticket on her way back from California?').toLowerCase();
+var hobbyQuestion3 = prompt('Does Thao like to take roadtrips? Has Thao ever driven her family back to Seattle from California nonstop?').toLowerCase();
 
 if (hobbyQuestion3 === 'yes' || hobbyQuestion3 === 'y'){
   alert('Awesome! You got it right!');
