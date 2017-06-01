@@ -1,5 +1,6 @@
 * {
   border: 1px solid rgba(0,0,0,0.3);
+  font-family: helvetica, serif;
 }
 body {
 /*I don't like this image after all as a background-image.
@@ -49,4 +50,12 @@ p {
 }
 .guessingGameQuestions {
   font-weight: bold;
+}
+#NW-plants {
+  font-size: 18px;
+  font-style: oblique;
+footer {
+  font-style: italic;
+  color: purple;
+  font-weight: bolder;
 }
