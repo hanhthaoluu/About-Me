@@ -12,12 +12,12 @@ if(confirmed === true){
   console.log('The user is not ready to play...but let\'s proceed anyway.');
 }
 
-var familyQuestion = prompt('Does Thao have kids?').toLowerCase();
+var familyQuestion = prompt('Does Thao have kids?').toUpperCase();
 
-if (familyQuestion === 'yes' || familyQuestion === 'y'){
+if (familyQuestion === 'YES' || familyQuestion === 'Y'){
   alert('Excellent! You are right!');
   console.log(user + ' got the familyQuestion question right.');
-} else if (familyQuestion === 'no' || familyQuestion === 'n'){
+} else if (familyQuestion === 'NO' || familyQuestion === 'N'){
   alert('Incorrect! Don\'t worry. You will get it right next time.');
   console.log(user + ' got the familyQuestion question wrong.');
 } else {
@@ -52,24 +52,24 @@ if(hobbyQuestion2 === 'YES' || hobbyQuestion2 === 'Y'){
   alert('Invalid response.');
 }
 
-var hobbyQuestion3 = prompt('Does Thao like to take roadtrips? Has Thao ever driven her family back to Seattle from California nonstop?').toLowerCase();
+var hobbyQuestion3 = prompt('Does Thao like to take roadtrips? Has Thao ever driven her family back to Seattle from California nonstop?').toUpperCase();
 
-if (hobbyQuestion3 === 'yes' || hobbyQuestion3 === 'y'){
+if (hobbyQuestion3 === 'YES' || hobbyQuestion3 === 'Y'){
   alert('Awesome! You got it right!');
   console.log(user + ' got the hobbyQuestion3 question correct!');
-} else if (hobbyQuestion3 === 'no' || hobbyQuestion3 === 'n'){
+} else if (hobbyQuestion3 === 'NO' || hobbyQuestion3 === 'N'){
   alert('Incorrect! Keep going and you will get the next question right.');
   console.log(user + ' got the hobbyQuestion3 question wrong.');
 } else {
   alert('Invalid response.');
 }
 
-var lifeValueQuestion = prompt('Is Thao a vegetarian?').toLowerCase();
+var lifeValueQuestion = prompt('Is Thao a vegetarian?').toUpperCase();
 
-if(lifeValueQuestion === 'yes' || lifeValueQuestion === 'y'){
+if(lifeValueQuestion === 'YES' || lifeValueQuestion === 'Y'){
   alert('Fanstastic! You are really good at this game!');
   console.log(user + ' got the lifeValueQuestion question right.');
-} else if (lifeValueQuestion === 'no' || lifeValueQuestion === 'n'){
+} else if (lifeValueQuestion === 'NO' || lifeValueQuestion === 'N'){
   alert('Sorry, you got it wrong!');
   console.log(user + ' got the lifeValueQuestion question wrong.');
 } else {
@@ -77,3 +77,12 @@ if(lifeValueQuestion === 'yes' || lifeValueQuestion === 'y'){
 }
 
 alert('This is the end of the guessing game. Hope you enjoyed playing the game. Thank you for playing!');
+document.write("Question 1: Does Thao have kids?" + "<br>" + "Your answer: " + familyQuestion + "<br>");
+document.write("Question 2: Is gardening Thao\'s favorite hobby?" + "<br>" + "Your answer: " + hobbyQuestion + "<br>");
+document.write("Question 3: Has Thao been to the Zion National Park and Bryce Kenyon National Park?" + "<br>" + "Your answer: " + hobbyQuestion2 + "<br>");
+document.write("Question 4: Does Thao like to take roadtrips? Has Thao ever driven her family back to Seattle from California nonstop?" + "<br>" + "Your answer: " + hobbyQuestion3 + "<br>");
+document.write("Question 5: Is Thao a vegetarian?" + "<br>" + "Your answer: " + lifeValueQuestion + "<br>");
+/*var guessingGameQuestions = [familyQuestion, hobbyQuestion, hobbyQuestion2, hobbyQuestion3, lifeValueQuestion];
+for(var i = 0; i < guessingGameQuestions.length; i++) {
+  document.write(guessingGameQuestions[i]);
+}*/
