@@ -12,7 +12,8 @@ if(confirmed === true){
   console.log('The user is not ready to play...but let\'s proceed anyway.');
 }
 
-var familyQuestion = prompt('Does Thao have kids?').toUpperCase();
+var familyQuestion = 'Does Thao have kids?';
+var answerFamilyQuestion = prompt(familyQuestion).toUpperCase();
 
 if (familyQuestion === 'YES' || familyQuestion === 'Y'){
   alert('Excellent! You are right!');
@@ -26,8 +27,8 @@ if (familyQuestion === 'YES' || familyQuestion === 'Y'){
 
 alert('Thao has two beautiful kids, a five years old daughter and a 9 months old son. Besides spending time learning to code and having fun with two kids, Thao has other hobbies.');
 
-var hobbyQuestion = prompt('Is gardening Thao\'s favorite hobby?').toUpperCase();
-
+var hobbyQuestion = 'Is gardening Thao\'s favorite hobby?';
+var answerHobbyQuestion = prompt(hobbyQuestion).toUpperCase();
 if(hobbyQuestion === 'YES' || hobbyQuestion === 'Y'){
   alert('Superstar! You\'re good at this game!');
   console.log(user + ' is a great player!');
@@ -40,7 +41,9 @@ if(hobbyQuestion === 'YES' || hobbyQuestion === 'Y'){
 
 alert('Summer is almost here. Are you excited?! During the warm months, Thao likes to do something else also besides spending time in the garden.');
 
-var hobbyQuestion2 = prompt('Has Thao been to the Zion National Park and Bryce Kenyon National Park?').toUpperCase();
+
+var hobbyQuestion2 = ('Has Thao been to the Zion National Park and Bryce Kenyon National Park?');
+var answerHobbyQuestion2 = prompt(hobbyQuestion2).toUpperCase();
 
 if(hobbyQuestion2 === 'YES' || hobbyQuestion2 === 'Y'){
   alert('You are a genius! Let\'s move forward!');
@@ -52,7 +55,8 @@ if(hobbyQuestion2 === 'YES' || hobbyQuestion2 === 'Y'){
   alert('Invalid response.');
 }
 
-var hobbyQuestion3 = prompt('Does Thao like to take roadtrips? Has Thao ever driven her family back to Seattle from California nonstop?').toUpperCase();
+var hobbyQuestion3 = 'Does Thao like to take roadtrips? Has Thao ever driven her family back to Seattle from California nonstop?');
+var answerHobbyQuestion3 = prompt(hobbyQuestion3).toUpperCase();
 
 if (hobbyQuestion3 === 'YES' || hobbyQuestion3 === 'Y'){
   alert('Awesome! You got it right!');
@@ -64,7 +68,8 @@ if (hobbyQuestion3 === 'YES' || hobbyQuestion3 === 'Y'){
   alert('Invalid response.');
 }
 
-var lifeValueQuestion = prompt('Is Thao a vegetarian?').toUpperCase();
+var lifeValueQuestion = ('Is Thao a vegetarian?');
+var answerLifeValueQuestion = prompt(lifeValueQuestion).toUpperCase();
 
 if(lifeValueQuestion === 'YES' || lifeValueQuestion === 'Y'){
   alert('Fanstastic! You are really good at this game!');
@@ -77,12 +82,12 @@ if(lifeValueQuestion === 'YES' || lifeValueQuestion === 'Y'){
 }
 
 alert('This is the end of the guessing game. Hope you enjoyed playing the game. Thank you for playing!');
-document.write("Question 1: Does Thao have kids?" + "<br>" + "Your answer: " + familyQuestion + "<br>");
-document.write("Question 2: Is gardening Thao\'s favorite hobby?" + "<br>" + "Your answer: " + hobbyQuestion + "<br>");
-document.write("Question 3: Has Thao been to the Zion National Park and Bryce Kenyon National Park?" + "<br>" + "Your answer: " + hobbyQuestion2 + "<br>");
-document.write("Question 4: Does Thao like to take roadtrips? Has Thao ever driven her family back to Seattle from California nonstop?" + "<br>" + "Your answer: " + hobbyQuestion3 + "<br>");
-document.write("Question 5: Is Thao a vegetarian?" + "<br>" + "Your answer: " + lifeValueQuestion + "<br>");
-/*var guessingGameQuestions = [familyQuestion, hobbyQuestion, hobbyQuestion2, hobbyQuestion3, lifeValueQuestion];
+document.write("Question 1: Does Thao have kids?" + "<br>" + "Your answer: " + answerFamilyQuestion + "<br>");
+document.write("Question 2: Is gardening Thao\'s favorite hobby?" + "<br>" + "Your answer: " + answerHobbyQuestion + "<br>");
+document.write("Question 3: Has Thao been to the Zion National Park and Bryce Kenyon National Park?" + "<br>" + "Your answer: " + answerHobbyQuestion2 + "<br>");
+document.write("Question 4: Does Thao like to take roadtrips? Has Thao ever driven her family back to Seattle from California nonstop?" + "<br>" + "Your answer: " + answerHobbyQuestion3 + "<br>");
+document.write("Question 5: Is Thao a vegetarian?" + "<br>" + "Your answer: " + answerLifeValueQuestion + "<br>");
+var guessingGameQuestions = [familyQuestion, answerFamilyQuestion, hobbyQuestion, hobbyQuestion2, hobbyQuestion3, lifeValueQuestion];
 for(var i = 0; i < guessingGameQuestions.length; i++) {
   document.write(guessingGameQuestions[i]);
-}*/
+}
