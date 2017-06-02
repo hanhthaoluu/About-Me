@@ -95,6 +95,362 @@ if(answerLifeValueQuestion === 'YES' || answerLifeValueQuestion === 'Y'){
   alert('Invalid response.');
 }
 
+//this works finally
+var guessing = 0;
+while (guessing < 5) {
+  var userAnswerFloweringPotsNumber = prompt('How many flowering pots are there in my house?');
+  if (40 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 50) {
+    alert("Correct! The answer is 45 pots!");
+    guessing = 5;
+    } else if (userAnswerFloweringPotsNumber < 20) {
+        alert("Your answer is too low. Guess again!");
+        guessing ++;
+    } else if (20 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 30) {
+        alert("Getting closer. Guess again!");
+        guessing ++;
+    } else if (30 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 40) {
+        alert("Getting very close. Guess again!");
+        guessing ++;
+    } else {
+      alert("Enter a number between 0 and 50.");
+      prompt('How many flowering pots are there in my house?');
+      guessing ++;
+    }
+}
+
+
+//tried this code. endless loop, prompting endlessly but take in new responses and output correct alert
+/*
+var guessing = 0;
+while (guessing < 6) {
+  var userAnswerFloweringPotsNumber = prompt('How many flowering pots are there in my house?');
+  if (40 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 50) {
+    alert("Correct! The answer is 45 pots!");
+    guessing = false;
+    } else if (userAnswerFloweringPotsNumber < 20) {
+        alert("Your answer is too low. Guess again!");
+        guessing ++;
+    } else if (20 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 30) {
+        alert("Getting closer. Guess again!");
+        guessing ++;
+    } else if (30 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 40) {
+        alert("Getting very close. Guess again!");
+        guessing ++;
+    } else {
+      alert("Enter a number between 0 and 50.");
+      prompt('How many flowering pots are there in my house?');
+      guessing ++;
+    }
+}
+*/
+
+//tried this already; endless prompting
+/*
+var guessing = 0;
+
+  do {
+    var userAnswerFloweringPotsNumber = prompt('How many flowering pots are there in my house?');
+    if (40 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 50) {
+        guessing = false;
+        alert("Correct! The answer is 45 pots!");
+
+    } else if (userAnswerFloweringPotsNumber < 20) {
+        alert("Your answer is too low. Guess again!");
+        guessing ++;
+    } else if (20 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 30) {
+        alert("Getting closer. Guess again!");
+        guessing ++;
+    } else if (30 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 40) {
+        alert("Getting very close. Guess again!");
+        guessing ++;
+    } else {
+      alert("Enter a number between 0 and 50.");
+  }
+  while (guessing < 6);
+*/
+
+
+
+
+
+//tried this code. endless loop, prompting endlessly but take in new responses and output correct alert
+/*
+var guessing = 0;
+do {
+  var userAnswerFloweringPotsNumber = prompt('How many flowering pots are there in my house?');
+  if (40 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 50) {
+    alert("Correct! The answer is 45 pots!");
+    guessing = false;
+  } else if (userAnswerFloweringPotsNumber < 20) {
+      alert("Your answer is too low. Guess again!");
+      guessing = true;
+  } else if (20 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 30) {
+      alert("Getting closer. Guess again!");
+      guessing = true;
+  } else if (30 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 40) {
+      alert("Getting very close. Guess again!");
+      guessing = true;
+  } else {
+      alert("Enter a number between 0 and 50.");
+
+  }
+  guessing ++;
+}
+while ((guessing = true) && (guessing <6));
+*/
+
+//tried this code. endless loop, prompting endlessly but take in new responses and output correct alert
+/*
+var guessing = 0;
+do {
+  var userAnswerFloweringPotsNumber = prompt('How many flowering pots are there in my house?');
+  if (40 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 50) {
+    alert("Correct! The answer is 45 pots!");
+    guessing = false;
+  } else if (userAnswerFloweringPotsNumber < 20) {
+      alert("Your answer is too low. Guess again!");
+      guessing = true;
+  } else if (20 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 30) {
+      alert("Getting closer. Guess again!");
+      guessing = true;
+  } else if (30 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 40) {
+      alert("Getting very close. Guess again!");
+      guessing = true;
+  } else {
+      alert("Enter a number between 0 and 50.");
+      prompt('How many flowering pots are there in my house?');
+      guessing = true;
+  }
+  guessing ++;
+}
+while ((guessing < 6) && (guessing = true));
+*/
+
+
+//tried this already. prompt 5 times but does not take in new responses correctly
+/*
+var userAnswerFloweringPotsNumber = prompt('How many flowering pots are there in my house?');
+var guessing = 0;
+do {
+  userAnswerFloweringPotsNumber;
+  if (40 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 50) {
+    alert("Correct! The answer is 45 pots!");
+    guessing = false;
+  } else if (userAnswerFloweringPotsNumber < 20) {
+      alert("Your answer is too low. Guess again!");
+  } else if (20 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 30) {
+      alert("Getting closer. Guess again!");
+  } else if (30 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 40) {
+      alert("Getting very close. Guess again!");
+  } else {
+      alert("Enter a number between 0 and 50.";
+      prompt('How many flowering pots are there in my house?');
+  }
+  guessing ++;
+}
+while (guessing < 5);
+*/
+
+var floweringPotsNumberQuestion = [userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber];
+while (guessing) {
+  for (i=0; i < floweringPotsNumberQuestion.length; i++) {
+    if (40 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 50) {
+      alert("Correct! The answer is 45 pots!");
+      guessing = false;
+    } else if (userAnswerFloweringPotsNumber < 20) {
+        alert("Your answer is too low. Guess again!");
+        prompt('How many flowering pots are there in my house?');
+    } else if (20 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 30) {
+        alert("Getting closer. Guess again!");
+        prompt('How many flowering pots are there in my house?');
+    } else if (30 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 40) {
+        alert("Getting very close. Guess again!");
+        prompt('How many flowering pots are there in my house?');
+    } else {
+        prompt('How many flowering pots are there in my house?');
+    }
+  }
+  guessing = false;
+}
+
+//tried this already. prompt 5 times but does not take in new responses correctly
+/*var guessing = true;
+var userAnswerFloweringPotsNumber = prompt('How many flowering pots are there in my house?');
+
+var floweringPotsNumberQuestion = [userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber];
+while (guessing) {
+  for (i=0; i < floweringPotsNumberQuestion.length; i++) {
+    if (40 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 50) {
+      alert("Correct! The answer is 45 pots!");
+      guessing = false;
+    } else if (userAnswerFloweringPotsNumber < 20) {
+        alert("Your answer is too low. Guess again!");
+        userAnswerFloweringPotsNumber;
+    } else if (20 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 30) {
+        alert("Getting closer. Guess again!");
+        userAnswerFloweringPotsNumber;
+
+    } else if (30 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 40) {
+        alert("Getting very close. Guess again!");
+        userAnswerFloweringPotsNumber;
+    } else {
+        alert("Enter a number between 0 and 50.";
+        userAnswerFloweringPotsNumber;
+    }
+  }
+  guessing = false;
+}
+*/
+
+//tried this code. alert 5 times but does not prompt again
+/*
+var guessing = true;
+var userAnswerFloweringPotsNumber = prompt('How many flowering pots are there in my house?');
+
+var floweringPotsNumberQuestion = [userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber];
+while (guessing) {
+  for (i=0; i < floweringPotsNumberQuestion.length; i++) {
+    if (40 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 50) {
+      alert("Correct! The answer is 45 pots!");
+      guessing = false;
+    } else if (userAnswerFloweringPotsNumber < 20) {
+        alert("Your answer is too low. Guess again!");
+
+    } else if (20 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 30) {
+        alert("Getting closer. Guess again!");
+
+
+    } else if (30 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 40) {
+        alert("Getting very close. Guess again!");
+
+    } else {
+        alert("Enter a number between 0 and 50.";
+        userAnswerFloweringPotsNumber;
+    }
+  }
+  guessing = false;
+}
+*/
+
+//tried this already. it asked the user 5 times but does not prompt again correctly
+/*
+var guessing = true;
+var userAnswerFloweringPotsNumber = prompt('How many flowering pots are there in my house?');
+
+var floweringPotsNumberQuestion = [userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber, userAnswerFloweringPotsNumber];
+while (guessing) {
+  for (i=0; i< floweringPotsNumberQuestion.length; i++) {
+    if (40 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 50) {
+      alert("Correct! The answer is 45 pots!");
+      guessing = false;
+    } else if (userAnswerFloweringPotsNumber < 20) {
+        prompt("Your answer is too low. Guess again!") + userAnswerFloweringPotsNumber);
+
+    } else if (20 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 30) {
+        prompt("Getting closer. Guess again!") + userAnswerFloweringPotsNumber);
+
+    } else if (30 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 40) {
+        prompt("Getting very close. Guess again!") + userAnswerFloweringPotsNumber);
+
+    } else {
+        prompt("Enter a number between 0 and 50.") + userAnswerFloweringPotsNumber);
+    }
+  }
+  guessing = false;
+}
+*/
+
+/*var floweringPotsNumberQuestion = "How many flowering pots are there in my house?";
+var userAnswerFloweringPotsNumber = prompt("How many flowering pots are there in my house?");
+if (40 <= userAnswerFloweringPotsNumber < 50) {
+  alert("Correct! The answer is 43 pots!");
+  guessingFloweringPotsNumberQuestion = false;
+} else if (userAnswerFloweringPotsNumber<20) {
+  alert("Your answer is too low. Guess again!");
+
+} else if (20 <= userAnswerFloweringPotsNumber < 30) {
+  alert("Getting closer. Guess again!");
+} else if (30 <= userAnswerFloweringPotsNumber < 40) {
+  alert("Getting very close. Guess again!");
+} else {
+  alert("Enter a number between 0 and 50.");
+}*/
+
+
+//var guessingFloweringPotsNumberQuestion = true;
+var floweringPotsNumberQuestion = "How many flowering pots are there in my house?";
+var userAnswerFloweringPotsNumber = prompt("How many flowering pots are there in my house?");
+
+//tried this but did not work
+/*while (guessingFloweringPotsNumberQuestion) {
+  if (40 <= userAnswerFloweringPotsNumber < 50) {
+    alert("Correct! The answer is 43 pots!");
+    guessingFloweringPotsNumberQuestion = false;
+  } else if (userAnswerFloweringPotsNumber<20) {
+    alert("Your answer is too low. Guess again!");
+
+  } else if (20 <= userAnswerFloweringPotsNumber < 30) {
+    alert("Getting closer. Guess again!");
+  } else if (30 <= userAnswerFloweringPotsNumber < 40) {
+    alert("Getting very close. Guess again!");
+  } else {
+    alert("Enter a number between 0 and 50.");
+  }
+}*/
+
+while (guessingFloweringPotsNumberQuestion ) {
+  //userAnswerFloweringPotsNumber;
+  for (userAnswerFloweringPotsNumber < 20) {
+    alert("Your answer is too low. Guess again!");
+    userAnswerFloweringPotsNumber;
+  for (20 <= userAnswerFloweringPotsNumber < 30) {
+    alert("Getting closer. Guess again!");
+    userAnswerFloweringPotsNumber;
+  for (30 <= userAnswerFloweringPotsNumber < 40) {
+    alert("Getting very close. Guess again!");
+    //userAnswerFloweringPotsNumber;
+  for (40 <= userAnswerFloweringPotsNumber < 50) {
+    document.write("Your guess to the number of flowering pots I own is" + userAnswerFloweringPotsNumber);
+    alert("Correct! The answer is 43 pots!");
+    guessingFloweringPotsNumberQuestion = false;
+  }
+}
+
+
+for (var i = 0; i<5; i++)
+
+
+//tried to use switch statement to ask user to guess the number of indoor flowering pots I own
+
+/*var userAnswerFloweringPotsNumber = prompt("How many flowering pots are there in my house?");
+switch (userAnswerFloweringPotsNumber) {
+  case userAnswerFloweringPotsNumber < 20;
+  prompt("Your answer is too low. Guess again!" + userAnswerFloweringPotsNumber);
+  break;
+  case 20 <= userAnswerFloweringPotsNumber < 30;
+  prompt("Getting closer. Guess again!" + userAnswerFloweringPotsNumber);
+  break;
+  case 30 <= userAnswerFloweringPotsNumber < 40;
+  prompt("Getting very close. Guess again!" + userAnswerFloweringPotsNumber);
+  break;
+  case 40 <= userAnswerFloweringPotsNumber < 50;
+  prompt("Correct! The answer is 43 pots!");
+  userAnswerFloweringPotsNumber = false;
+  break;
+  default:
+  prompt("Enter a number between 0 and 50." + userAnswerFloweringPotsNumber);
+}*/
+
+/*var states = "Florida Pennsylvania California Texas Maryland";
+var myStates = "Florida Pennsylvania";
+var userAnswerStates = prompt("Besides Washington state, what other states have I lived in the past?");
+
+var guessingStates = true;
+while(guessingStates) {
+
+}*/
+
+
 alert('This is the end of the guessing game. Hope you enjoyed playing the game. Thank you for playing!');
 
 document.write("THE GUESSING GAME" + "<br>");
@@ -103,7 +459,9 @@ document.write("Question 2: Is gardening Thao\'s favorite hobby?" + "<br>" + "Yo
 document.write("Question 3: Has Thao been to the Zion National Park and Bryce Kenyon National Park?" + "<br>" + "Your answer: " + answerHobbyQuestion2 + "<br>");
 document.write("Question 4: Does Thao like to take roadtrips? Has Thao ever driven her family back to Seattle from California nonstop?" + "<br>" + "Your answer: " + answerHobbyQuestion3 + "<br>");
 document.write("Question 5: Is Thao a vegetarian?" + "<br>" + "Your answer: " + answerLifeValueQuestion + "<br>");
-document.write("RESULTS: You got " + correct + " questions correct and " + incorrect + " questions incorrect.");
+document.write("RESULTS: " + user + "You got " + correct + " questions correct and " + incorrect + " questions incorrect.");
+document.write(floweringPotsNumberQuestion + "<br>");
+document.write("The correct number is 43!");
 /*var guessingGameQuestions = [familyQuestion, answerFamilyQuestion, hobbyQuestion, hobbyQuestion2, hobbyQuestion3, lifeValueQuestion];
 for(var i = 0; i < guessingGameQuestions.length; i++) {
   document.write(guessingGameQuestions[i]);
