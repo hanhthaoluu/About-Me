@@ -109,7 +109,7 @@ while (guessingNumberFloweringPots < 4) {
         guessingNumberFloweringPots ++;
     } else {
       alert("Enter a number between 0 and 50.");
-      var userAnswerFloweringPotsNumber = prompt('How many planting pots are there in Thao\'s house?');
+      //var userAnswerFloweringPotsNumber = prompt('How many planting pots are there in Thao\'s house?');
       guessingNumberFloweringPots ++;
     }
 }
