@@ -14,6 +14,7 @@ if(confirmed === true){
 var correct = 0;
 //var totalScore = correct/7;
 
+function myGuessingGameIfElseYesMeansRight() {
 var familyQuestion = 'Does Thao have kids?';
 var answerFamilyQuestion = prompt(familyQuestion).toUpperCase();
 
@@ -30,7 +31,10 @@ if (answerFamilyQuestion === 'YES' || answerFamilyQuestion === 'Y'){
 }
 
 alert('Thao has two beautiful kids, a five years old daughter and a 9 months old son. Besides spending time learning to code and having fun with two kids, Thao has other hobbies.');
+}
+myGuessingGameIfElseYesMeansRight();
 
+function myGuessingGameHobbyQuestionIfElseYesMeansRight() {
 var hobbyQuestion = 'Is gardening Thao\'s favorite hobby?';
 var answerHobbyQuestion = prompt(hobbyQuestion).toUpperCase();
 
@@ -44,10 +48,13 @@ if(answerHobbyQuestion === 'YES' || answerHobbyQuestion === 'Y'){
 } else {
   alert('Invalid response.');
 }
+}
+myGuessingGameHobbyQuestionIfElseYesMeansRight();
 
 alert('Summer is here! Are you excited?! During the warm months, Thao likes to do something else also besides spending time in the garden.');
 
 
+function myGuessingGameHikingQuestionIfElseYesMeansRight() {
 var hobbyQuestion2 = 'Has Thao been to the Zion National Park and Bryce Canyon National Park?';
 var answerHobbyQuestion2 = prompt(hobbyQuestion2).toUpperCase();
 
@@ -61,7 +68,10 @@ if(answerHobbyQuestion2 === 'YES' || answerHobbyQuestion2 === 'Y'){
 } else {
   alert('Invalid response.');
 }
+}
+myGuessingGameHikingQuestionIfElseYesMeansRight();
 
+function myGuessingGameRoadTripIfElseYesMeansRight() {
 var hobbyQuestion3 = 'Does Thao like to take roadtrips? Has Thao ever driven her family back to Seattle from California nonstop?';
 var answerHobbyQuestion3 = prompt(hobbyQuestion3).toUpperCase();
 
@@ -75,7 +85,12 @@ if (answerHobbyQuestion3 === 'YES' || answerHobbyQuestion3 === 'Y'){
 } else {
   alert('Invalid response.');
 }
+}
 
+myGuessingGameRoadTripIfElseYesMeansRight();
+
+
+function myGuessingGameDietaryQuestionIfElseYesMeansRight() {
 var lifeValueQuestion = ('Is Thao a vegetarian?');
 var answerLifeValueQuestion = prompt(lifeValueQuestion).toUpperCase();
 
@@ -89,7 +104,11 @@ if(answerLifeValueQuestion === 'YES' || answerLifeValueQuestion === 'Y'){
 } else {
   alert('Invalid response.');
 }
+}
 
+myGuessingGameDietaryQuestionIfElseYesMeansRight();
+
+function myGuessingGamePlantingPotsIfElseYesMeansRight() {
 //This works perfectly
 var guessingNumberFloweringPots = 0;
 while (guessingNumberFloweringPots < 4) {
@@ -115,7 +134,11 @@ while (guessingNumberFloweringPots < 4) {
 }
 
 alert('Thao is plantholic. Thao has 45 pots in her house, not counting the outdoor pots.');
+}
 
+myGuessingGamePlantingPotsIfElseYesMeansRight();
+
+function myGuessingGameStatesILivedWhileIfElse() {
 //This works
 var states = [' Virginia', ' Florida', ' Georgia', ' Oregon', ' Ohio', ' Pennsylvania', ' California', ' Maryland', ' Texas', ' Utah'];
 var myStates = ['FLORIDA', 'PENNSYLVANIA'];
@@ -135,6 +158,9 @@ while(guessingStatesILived < 6) {
   }
 }
 alert('Thao has lived in Florida and Pennsylvania.');
+}
+
+myGuessingGameStatesILivedWhileIfElse();
 /*
   for(var i = 0; i < myStates.length; i++) {
     console.log(myStates[i]);
