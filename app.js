@@ -14,6 +14,7 @@ if(confirmed === true){
 var correct = 0;
 //var totalScore = correct/7;
 
+function myGuessingGameIfElseYesMeansRight() {
 var familyQuestion = 'Does Thao have kids?';
 var answerFamilyQuestion = prompt(familyQuestion).toUpperCase();
 
@@ -30,7 +31,10 @@ if (answerFamilyQuestion === 'YES' || answerFamilyQuestion === 'Y'){
 }
 
 alert('Thao has two beautiful kids, a five years old daughter and a 9 months old son. Besides spending time learning to code and having fun with two kids, Thao has other hobbies.');
+}
+myGuessingGameIfElseYesMeansRight();
 
+function myGuessingGameHobbyQuestionIfElseYesMeansRight() {
 var hobbyQuestion = 'Is gardening Thao\'s favorite hobby?';
 var answerHobbyQuestion = prompt(hobbyQuestion).toUpperCase();
 
@@ -44,10 +48,13 @@ if(answerHobbyQuestion === 'YES' || answerHobbyQuestion === 'Y'){
 } else {
   alert('Invalid response.');
 }
+}
+myGuessingGameHobbyQuestionIfElseYesMeansRight();
 
 alert('Summer is here! Are you excited?! During the warm months, Thao likes to do something else also besides spending time in the garden.');
 
 
+function myGuessingGameHikingQuestionIfElseYesMeansRight() {
 var hobbyQuestion2 = 'Has Thao been to the Zion National Park and Bryce Canyon National Park?';
 var answerHobbyQuestion2 = prompt(hobbyQuestion2).toUpperCase();
 
@@ -61,7 +68,10 @@ if(answerHobbyQuestion2 === 'YES' || answerHobbyQuestion2 === 'Y'){
 } else {
   alert('Invalid response.');
 }
+}
+myGuessingGameHikingQuestionIfElseYesMeansRight();
 
+function myGuessingGameRoadTripIfElseYesMeansRight() {
 var hobbyQuestion3 = 'Does Thao like to take roadtrips? Has Thao ever driven her family back to Seattle from California nonstop?';
 var answerHobbyQuestion3 = prompt(hobbyQuestion3).toUpperCase();
 
@@ -75,7 +85,12 @@ if (answerHobbyQuestion3 === 'YES' || answerHobbyQuestion3 === 'Y'){
 } else {
   alert('Invalid response.');
 }
+}
 
+myGuessingGameRoadTripIfElseYesMeansRight();
+
+
+function myGuessingGameDietaryQuestionIfElseYesMeansRight() {
 var lifeValueQuestion = ('Is Thao a vegetarian?');
 var answerLifeValueQuestion = prompt(lifeValueQuestion).toUpperCase();
 
@@ -89,7 +104,11 @@ if(answerLifeValueQuestion === 'YES' || answerLifeValueQuestion === 'Y'){
 } else {
   alert('Invalid response.');
 }
+}
 
+myGuessingGameDietaryQuestionIfElseYesMeansRight();
+
+function myGuessingGamePlantingPotsIfElseYesMeansRight() {
 //This works perfectly
 var guessingNumberFloweringPots = 0;
 while (guessingNumberFloweringPots < 4) {
@@ -115,14 +134,19 @@ while (guessingNumberFloweringPots < 4) {
 }
 
 alert('Thao is plantholic. Thao has 45 pots in her house, not counting the outdoor pots.');
+}
 
-//This works
-/*var states = [' Virginia', ' Florida', ' Georgia', ' Oregon', ' Ohio', ' Pennsylvania', ' California', ' Maryland', ' Texas', ' Utah'];
+myGuessingGamePlantingPotsIfElseYesMeansRight();
+
+/*
+//This DOES NOT work.
+var states = [' Virginia', ' Florida', ' Georgia', ' Oregon', ' Ohio', ' Pennsylvania', ' California', ' Maryland', ' Texas', ' Utah'];
 var myStates = ['FLORIDA', 'PENNSYLVANIA'];
 var userSixAnswerStatesILived = [];
 
 var guessingStatesILived = 0;
 while(guessingStatesILived < 6) {
+
   var userAnswerStatesILived = prompt("Besides Washington state, what other two states have I lived in the past?" + " Choose from these possible correct states: " + states + "? Enter 1 state for each prompt or textbox. You have 6 chances to get a single correct answer.").toUpperCase();
   userSixAnswerStatesILived.push(userAnswerStatesILived);
   guessingStatesILived ++;
@@ -138,37 +162,81 @@ while(guessingStatesILived < 6) {
       console.log('Match: ' + myStates[i]);
       correct ++;
       break;
-      //guessingStatesILived = 6;
-      }
-      else {
+      } else {
       alert('No match! Better luck next time!');
       incorrect ++;
-      userSixAnswerStatesILived;
+      prompt
       }
-
     }
   }
-}*/
+}
+*/
 
 
+//this works. tested
+function myGuessingGameStatesILivedWhileIfElse() {
+  var states = [' Virginia', ' Florida', ' Georgia', ' Oregon', ' Ohio', ' Pennsylvania', ' California', ' Maryland', ' Texas', ' Utah'];
+  var myStates = ['FLORIDA', 'PENNSYLVANIA'];
+  var userSixAnswerStatesILived = [];
+  var guessingStatesILived = 0;
+  while(guessingStatesILived < 6) {
+    var userAnswerStatesILived = prompt("Besides Washington state, what other two states have I lived in the past?" + " Choose from these possible correct states: " + states + "? Enter 1 state (not case sensitive) for each prompt or text box. You have 6 chances to get a single correct answer.").toUpperCase();
 
+    if (userAnswerStatesILived === 'FLORIDA' || userAnswerStatesILived === 'PENNSYLVANIA') {
+      alert('Correct!');
+      correct ++;
+      break;
+    } else {
+      alert('Incorrect. Guess again.');
+      guessingStatesILived++;
+    }
+  }
+alert('Thao has lived in Florida and Pennsylvania.');
+}
 
+myGuessingGameStatesILivedWhileIfElseLogic();
+/*
+  for(var i = 0; i < myStates.length; i++) {
+    console.log(myStates[i]);
+    for (var j = 0; j < userSixAnswerStatesILived.length; j++) {
+      console.log(userSixAnswerStatesILived[j]);
+
+      if (myStates[i] === userSixAnswerStatesILived[j]) {
+        alert('Your answer match!');
+      //console.log('Match: ' + myStates[i]);
+        correct ++;
+        break;
+      //guessingStatesILived = 6;
+        console.log('Match: ' + myStates[i]);
+      } else {
+        alert('No match! All your six guesses were wrong. Better luck next time!');
+      //incorrect ++;
+      //guessingStatesILived = 6;
+      }
+    }
+  }
+  */
 
 alert('This is the end of the guessing game. Hope you enjoyed playing the game. Thank you for playing!');
 
 var totalScore = (correct + '/7');
 
 document.write("THE GUESSING GAME" + "<br>");
-document.write("QUESTION 1: Does Thao have kids?" + "<br>" + "YOUR ANSWER: " + answerFamilyQuestion + "<br>");
-document.write("QUESTION 2: Is gardening Thao\'s favorite hobby?" + "<br>" + "YOUR ANSWER: " + answerHobbyQuestion + "<br>");
-document.write("QUESTION 3: Has Thao been to the Zion National Park and Bryce Kenyon National Park?" + "<br>" + "YOUR ANSWER: " + answerHobbyQuestion2 + "<br>");
-document.write("QUESTION 4: Does Thao like to take roadtrips? Has Thao ever driven her family back to Seattle from California nonstop?" + "<br>" + "YOUR ANSWER: " + answerHobbyQuestion3 + "<br>");
-document.write("QUESTION 5: Is Thao a vegetarian?" + "<br>" + "YOUR ANSWER: " + answerLifeValueQuestion + "<br>");
 
+document.write("QUESTION 1: Does Thao have kids?" + "<br>" + "YOUR ANSWER: " + answerFamilyQuestion + "<br>");
+
+document.write("QUESTION 2: Is gardening Thao\'s favorite hobby?" + "<br>" + "YOUR ANSWER: " + answerHobbyQuestion + "<br>");
+
+document.write("QUESTION 3: Has Thao been to the Zion National Park and Bryce Kenyon National Park?" + "<br>" + "YOUR ANSWER: " + answerHobbyQuestion2 + "<br>");
+
+document.write("QUESTION 4: Does Thao like to take roadtrips? Has Thao ever driven her family back to Seattle from California nonstop?" + "<br>" + "YOUR ANSWER: " + answerHobbyQuestion3 + "<br>");
+
+document.write("QUESTION 5: Is Thao a vegetarian?" + "<br>" + "YOUR ANSWER: " + answerLifeValueQuestion + "<br>");
 
 document.write("QUESTION 6: How many planting pots are there in Thao\'s house?" + "<br>" + "YOUR ANSWER: " + userAnswerFloweringPotsNumber + "<br>");
 
 document.write("QUESTION 7: Besides Washington state, what other two states have I lived in the past? Choose from these possible correct states: " + states + "?" + "<br>" + "YOUR ANSWER: " + userSixAnswerStatesILived + "<br>");
+document.write("Thao has lived in Florida and Pennsylvania." + "<br>");
 
 document.write("RESULTS: " + user + ", you got " + correct + " questions correct." + "<br>" + "YOUR SCORE: " + totalScore);
 
