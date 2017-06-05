@@ -33,7 +33,7 @@ h1 {
   /*create a border that is a perfect circle by setting the radius equal to the height of the box or to 100%*/
   /*border-radius: 100%;*/
   padding: 10px;
-  margin: 5px;
+  margin: 0px;
   text-transform: uppercase;
   height: auto;
   top: 0px;
