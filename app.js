@@ -117,36 +117,38 @@ while (guessingNumberFloweringPots < 4) {
 alert('Thao is plantholic. Thao has 45 pots in her house, not counting the outdoor pots.');
 
 //This works
-var states = [' Virginia', ' Florida', ' Georgia', ' Oregon', ' Ohio', ' Pennsylvania', ' California', ' Maryland', ' Texas', ' Utah'];
+/*var states = [' Virginia', ' Florida', ' Georgia', ' Oregon', ' Ohio', ' Pennsylvania', ' California', ' Maryland', ' Texas', ' Utah'];
 var myStates = ['FLORIDA', 'PENNSYLVANIA'];
 var userSixAnswerStatesILived = [];
 
 var guessingStatesILived = 0;
 while(guessingStatesILived < 6) {
-  var userAnswerStatesILived = prompt("Besides Washington state, what other two states have I lived in the past?" + " Choose from these possible correct states: " + states + "? Enter 1 state for each prompt or box. You have 6 chances to get a single correct answer.").toUpperCase();
+  var userAnswerStatesILived = prompt("Besides Washington state, what other two states have I lived in the past?" + " Choose from these possible correct states: " + states + "? Enter 1 state for each prompt or textbox. You have 6 chances to get a single correct answer.").toUpperCase();
   userSixAnswerStatesILived.push(userAnswerStatesILived);
   guessingStatesILived ++;
-}
 
-for(var i = 0; i < myStates.length; i++) {
+ for(var i = 0; i < myStates.length; i++) {
   console.log(myStates[i]);
   for (var j = 0; j < userSixAnswerStatesILived.length; j++) {
     console.log(userSixAnswerStatesILived[j]);
 
     if (myStates[i] === userSixAnswerStatesILived[j]) {
       alert('Your answer match!');
-      //console.log('Match: ' + myStates[i]);
-      correct ++;
-      //guessingStatesILived = 6;
+
       console.log('Match: ' + myStates[i]);
-     }
-    //else {
-      //alert('No match! All your six guesses were wrong. Better luck next time!');
-      //incorrect ++;
+      correct ++;
+      break;
       //guessingStatesILived = 6;
+      }
+      else {
+      alert('No match! Better luck next time!');
+      incorrect ++;
+      userSixAnswerStatesILived;
+      }
 
     }
   }
+}*/
 
 
 
