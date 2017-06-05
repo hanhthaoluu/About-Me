@@ -7,11 +7,10 @@
   font-size: 22px;
 }
 body {
-/*I don't like this image after all as a background-image.*/
 
 background: rgba(0,0,0,.8);
-/*background-image: url("images/IMG_0083.JPG");*/
-background-image: url("http://www.worldfolksong.com/songbook/hawaii/img/pearl01.jpg");
+background-image: url("images/IMG_0083.JPG");
+/*background-image: url("http://www.worldfolksong.com/songbook/hawaii/img/pearl01.jpg");*/
 background-repeat: no-repeat;
 background-size: 100% 130%;
 overflow: scroll;
