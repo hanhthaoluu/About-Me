@@ -5,17 +5,24 @@
   margin: 0;
   padding: 0;
   font-size: 22px;
+  line-height: 1.4em;
+  color: black;
+  /*grey with opacity*/
+  background-color:rgba(192,192,192,0.3);
+  font-weight: bolder;
 }
-body {
 
+body {
 background: rgba(0,0,0,.8);
 background-image: url("images/IMG_0083.JPG");
 /*background-image: url("http://www.worldfolksong.com/songbook/hawaii/img/pearl01.jpg");*/
 background-repeat: no-repeat;
-background-size: 100% 130%;
+background-size: 160% 100%;
 overflow: scroll;
 text-align: center;
+font-weight: bolder;
 }
+
 h1 {
   background-color: LightSeaGreen;
   color: brown;
@@ -26,7 +33,6 @@ h1 {
   min-width: 600px;
   max-width: 1000px;*/
   border-style: groove;
-
   border: 5px groove rgba(0,0,0,0.3);
   border-width: 10px 2px 10px 2px;
   /*create a border that is a perfect circle by setting the radius equal to the height of the box or to 100%*/
@@ -41,28 +47,40 @@ h1 {
   position: fixed;
   width: 100%;
   z-index: 1000;
-
 }
 
 #education {
+color: black;
+}
 
+.page-content {
+color: black;
 }
 
 #opening-statement {
-
- margin-top: 100px;
+  margin-top: 100px;
+  color:black;
 }
+
 #personality {
   font-family: "Calisto MT", serif;
 }
-p {
 
+#work-experience {
+
+}
+p {
   font-style: normal;
   font-weight: bolder;
   margin: 10px;
   margin: 20px 10px;
   overflow: scroll;
 }
+
+#past-job-list {
+  color: black;
+}
+
 #unique-p-tag {
   text-align: center;
 }
@@ -72,12 +90,15 @@ p {
 .guessingGameQuestions {
   font-weight: bold;
 }
+.list {
+  line-height: 1.4em;
+}
 
 #favorite-places {
   text-transform: uppercase;
-  font-weight: bold;
-  font-size: 18px;
-  color: #000080;
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
 }
 
 
@@ -85,27 +106,30 @@ ul {
   margin: 15px auto;
   width: 60%;
   /*margin: 0 0 10px 0;*/
-
+  color: 	black;
 }
 
 #NW-plants {
-
+  width: auto;
   font-style: normal;
-  text-align: center;
-  width: 100%;
-  position: relative;
-  text-transform: uppercase;
-  color: #008000;
+  text-align: center
+  position: center;
+  color: black;
   font-weight: bolder;
 }
 
 ol {
   text-align: center;
   list-style-position: inside;
+  color: black;
+}
+
+#most-favorite-plant {
+  color: black;
 }
 
 footer {
   font-style: italic;
-  color: purple;
+  color: black;
   font-weight: bolder;
 }
