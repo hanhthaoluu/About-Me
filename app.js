@@ -111,11 +111,11 @@ myGuessingGameDietaryQuestionIfElseYesMeansRight();
 function myGuessingGamePlantingPotsIfElseYesMeansRight() {
 //This works perfectly
 var guessingNumberFloweringPots = 0;
-while (guessingNumberFloweringPots < 4) {
+while (guessingNumberFloweringPots < 5) {
   var userAnswerFloweringPotsNumber = prompt('How many flowering pots are there in Thao\'s house? Enter a number between 0 and 50.  If your number is within the correct range then your answer is rendered as correct. You have 5 chances total. Good luck!');
   if (45 <= userAnswerFloweringPotsNumber && userAnswerFloweringPotsNumber < 50) {
     alert("Correct! The answer is 45 pots!");
-    guessingNumberFloweringPots = 4;
+    guessingNumberFloweringPots = 5;
     correct ++;
     } else if (userAnswerFloweringPotsNumber < 20) {
         alert("Incorrect. Your answer is way too low.");
@@ -134,6 +134,7 @@ while (guessingNumberFloweringPots < 4) {
 }
 
 alert('Thao is plantholic. Thao has 45 pots in her house, not counting the outdoor pots.');
+
 }
 
 myGuessingGamePlantingPotsIfElseYesMeansRight();
@@ -175,10 +176,12 @@ while(guessingStatesILived < 6) {
 
 //this works. tested
 function myGuessingGameStatesILivedWhileIfElse() {
+
   var states = [' Virginia', ' Florida', ' Georgia', ' Oregon', ' Ohio', ' Pennsylvania', ' California', ' Maryland', ' Texas', ' Utah'];
   var myStates = ['FLORIDA', 'PENNSYLVANIA'];
   var userSixAnswerStatesILived = [];
   var guessingStatesILived = 0;
+
   while(guessingStatesILived < 6) {
     var userAnswerStatesILived = prompt("Besides Washington state, what other two states have I lived in the past?" + " Choose from these possible correct states: " + states + "? Enter 1 state (not case sensitive) for each prompt or text box. You have 6 chances to get a single correct answer.").toUpperCase();
 
@@ -191,10 +194,11 @@ function myGuessingGameStatesILivedWhileIfElse() {
       guessingStatesILived++;
     }
   }
+
 alert('Thao has lived in Florida and Pennsylvania.');
 }
 
-myGuessingGameStatesILivedWhileIfElseLogic();
+myGuessingGameStatesILivedWhileIfElse();
 /*
   for(var i = 0; i < myStates.length; i++) {
     console.log(myStates[i]);

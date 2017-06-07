@@ -1,44 +1,53 @@
 * {
   /*border: 1px solid rgba(0,0,0,0.3);*/
   font-family: helvetica, serif;
-  margin: auto;
-  margin: 0;
+  margin:0;
   padding: 0;
   font-size: 22px;
-  line-height: 1.4em;
-  color: black;
+  line-height: 1.5em;
+
   /*grey with opacity*/
-  background-color:rgba(192,192,192,0.3);
+  /*background-color:rgba(192,192,192,0.3);*/
   font-weight: bolder;
 }
 
 body {
-background: rgba(0,0,0,.8);
-background-image: url("images/IMG_0083.JPG");
-/*background-image: url("http://www.worldfolksong.com/songbook/hawaii/img/pearl01.jpg");*/
-background-repeat: no-repeat;
-background-size: 160% 100%;
+/*background: rgba(0,0,0,.8);*/
+/*background-image: url("images/IMG_0083.JPG");*/
+
+
 overflow: scroll;
 text-align: center;
 font-weight: bolder;
+/*opacity: 0.5;*/
 }
 
+#my-picture-as-background {
+  position: relative;
+  width: 100%;
+  opacity: 1;
+  overflow: hidden;
+}
 h1 {
-  background-color: LightSeaGreen;
+  background-color: rgba(255,255,255,.1);
   color: brown;
   font-family: helvetica;
   font-size: 25px;
+
+  text-align: center;
+  width: 100%;
+  background-color: lightGrey;
   /*height: 50px;
   width: 700px;
   min-width: 600px;
   max-width: 1000px;*/
-  border-style: groove;
+  /*border-style: groove;*/
   border: 5px groove rgba(0,0,0,0.3);
-  border-width: 10px 2px 10px 2px;
+  border-width: 8px 2px 8px 2px;
   /*create a border that is a perfect circle by setting the radius equal to the height of the box or to 100%*/
   /*border-radius: 100%;*/
-  padding: 10px;
-  margin: 0px;
+  padding: 30px;
+
   text-transform: uppercase;
   height: auto;
   top: 0px;
@@ -47,11 +56,25 @@ h1 {
   position: fixed;
   width: 100%;
   z-index: 1000;
+  overflow: scroll;
 }
 
-#education {
-color: black;
+.main-content {
+  margin: auto;
+  width: 1000px;
+  text-align: center;
 }
+
+h2{
+  color: white;
+  text-align: center;
+  background-color: rgba(255,255,255,.3);
+}
+#education, #opening-statement, #work-experience, #an-overview-of-me {
+color: blue;
+font-weight: bold;
+}
+
 
 .page-content {
 color: black;
@@ -59,7 +82,7 @@ color: black;
 
 #opening-statement {
   margin-top: 100px;
-  color:black;
+  color:blue;
 }
 
 #personality {
@@ -94,11 +117,11 @@ p {
   line-height: 1.4em;
 }
 
-#favorite-places {
+#favorite-places, #nw-plants, #guessingGameQuestions {
   text-transform: uppercase;
   font-weight: bolder;
-  font-size: 20px;
-  color: black;
+  font-size: 22px;
+  color: green;
 }
 
 
@@ -109,13 +132,8 @@ ul {
   color: 	black;
 }
 
-#NW-plants {
-  width: auto;
-  font-style: normal;
-  text-align: center
-  position: center;
-  color: black;
-  font-weight: bolder;
+#nw-plants {
+
 }
 
 ol {
@@ -125,7 +143,8 @@ ol {
 }
 
 #most-favorite-plant {
-  color: black;
+  color: purple;
+  font-style: italic;
 }
 
 footer {
