@@ -168,22 +168,3 @@ myGuessingGameStatesILivedWhileIfElse();
 alert('This is the end of the guessing game. Hope you enjoyed playing the game. Thank you for playing!');
 
 var totalScore = (correct + '/7');
-
-document.write("THE GUESSING GAME" + "<br>");
-
-document.write("QUESTION 1: Does Thao have kids?" + "<br>" + "YOUR ANSWER: " + answerFamilyQuestion + "<br>");
-
-document.write("QUESTION 2: Is gardening Thao\'s favorite hobby?" + "<br>" + "YOUR ANSWER: " + answerHobbyQuestion + "<br>");
-
-document.write("QUESTION 3: Has Thao been to the Zion National Park and Bryce Kenyon National Park?" + "<br>" + "YOUR ANSWER: " + answerHobbyQuestion2 + "<br>");
-
-document.write("QUESTION 4: Does Thao like to take roadtrips? Has Thao ever driven her family back to Seattle from California nonstop?" + "<br>" + "YOUR ANSWER: " + answerHobbyQuestion3 + "<br>");
-
-document.write("QUESTION 5: Is Thao a vegetarian?" + "<br>" + "YOUR ANSWER: " + answerLifeValueQuestion + "<br>");
-
-document.write("QUESTION 6: How many planting pots are there in Thao\'s house?" + "<br>" + "YOUR ANSWER: " + userAnswerFloweringPotsNumber + "<br>");
-
-document.write("QUESTION 7: Besides Washington state, what other two states have I lived in the past? Choose from these possible correct states: " + states + "?" + "<br>" + "YOUR ANSWER: " + userSixAnswerStatesILived + "<br>");
-document.write("Thao has lived in Florida and Pennsylvania." + "<br>");
-
-document.write("RESULTS: " + user + ", you got " + correct + " questions correct." + "<br>" + "YOUR SCORE: " + totalScore);
